@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Privacy Choices - HairCare</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .choices-modal {
+            position: relative;
+            width: 80%;
+            max-width: 800px; 
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .choices-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .close-button {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .choices-body {
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .choices-body h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .choices-body ul {
+            padding-left: 20px;
+        }
+
+        .choices-body a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .choices-body a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="choices-modal">
+        <div class="choices-content">
+            <div class="choices-header">
+                <h2>Your Privacy Choices</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="choices-body">
+                <h3>Your Privacy Matters</h3>
+                <p>At HairCare, we respect your privacy and want to empower you to make informed choices about how your information is used. This page explains your options and how to exercise them.</p>
+
+                <h3>Information Collection and Use</h3>
+                <p>We collect information about you when you visit our website, create an account, place an order, or interact with our services. This information may include:</p>
+                <ul>
+                    <li><strong>Personal Information:</strong> Such as your name, email address, shipping address, and payment details.</li>
+                    <li><strong>Health-Related Information:</strong>  Such as your hair type, scalp condition, and any allergies or sensitivities.</li>
+                    <li><strong>Usage Data:</strong> Such as your IP address, browser type, pages visited, and interactions with our website.</li>
+                    <li><strong>Cookies and Similar Technologies:</strong> We use cookies and similar technologies to enhance your browsing experience, personalize content, and gather information about how you use our website.</li>
+                </ul>
+
+                <h3>Your Choices</h3>
+                <p>You have the following choices regarding your information:</p>
+
+                <h4>1. Access and Control Your Information</h4>
+                <ul>
+                    <li><strong>Access:</strong> You can access and review your personal information by logging into your account or contacting us.</li>
+                    <li><strong>Correction:</strong> You can update or correct your information by logging into your account or contacting us.</li>
+                    <li><strong>Deletion:</strong> You can request to delete your account and information by contacting us.</li>
+                </ul>
+
+                <h4>2. Cookies and Tracking</h4>
+                <ul>
+                    <li><strong>Browser Settings:</strong> You can manage your cookie preferences through your web browser settings. You can choose to block or delete cookies, but this may affect your browsing experience.</li>
+                    <li><strong>Do Not Track:</strong>  We honor "Do Not Track" signals sent by your web browser.</li>
+                </ul>
+
+                <h4>3. Marketing Communications</h4>
+                <ul>
+                    <li><strong>Opt-Out:</strong> You can opt-out of receiving marketing emails by clicking the "unsubscribe" link at the bottom of any marketing email or by contacting us.</li>
+                </ul>
+
+                <h4>4. Targeted Advertising</h4>
+                <ul>
+                    <li><strong>Opt-Out:</strong> You can opt-out of targeted advertising by visiting the <a href="https://www.aboutads.info/choices/">Digital Advertising Alliance's opt-out portal</a> or the <a href="http://optout.networkadvertising.org/?c=1">Network Advertising Initiative's opt-out portal</a>.</li>
+                </ul>
+
+                <h4>5. California Privacy Rights</h4>
+                <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect, the right to request deletion of your personal information, and the right to opt-out of the sale of your personal information. You can exercise these rights by contacting us.</p>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions or concerns about your privacy choices, please contact us at <a href="mailto:privacy@yourhaircare.com">privacy@yourhaircare.com</a>.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeButton = document.querySelector('.close-button');
+            const choicesModal = document.querySelector('.choices-modal');
+        
+            closeButton.addEventListener('click', function() {
+                choicesModal.style.display = 'none';
+            });
+        
+            window.addEventListener('click', function(event) {
+                if (event.target === choicesModal) {
+                    choicesModal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

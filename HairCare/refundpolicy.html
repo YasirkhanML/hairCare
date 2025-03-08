@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - HairCare</title>
+    <!-- <link rel="stylesheet" href="refund-policy.css"> -->
+    <style>
+body {
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.refund-modal {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-height: 90vh; /* Set max-height */
+    overflow-y: auto; /* Add scrollbar */
+}
+
+.refund-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.close-button {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.refund-body {
+    line-height: 1.6;
+    padding: 20px; /* Add padding */
+}
+
+.refund-body h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.refund-body ol, .refund-body ul {
+    padding-left: 20px;
+}
+
+.refund-body a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.refund-body a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="refund-modal">
+        <div class="refund-content">
+            <div class="refund-header">
+                <h2>Refund Policy</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="refund-body">
+                <h3>Conditions for Returns</h3>
+                <ol>
+                    <li>The product must be sealed, unused, and without any flaws. If a product is returned to us in an inadequate condition, we reserve the right to send it back to you.</li>
+                    <li>The product must be returned in the original and undamaged manufacturer packaging/box. If the product was delivered in a second layer of packaging, do not put tape or stickers on the manufacturer's box.</li>
+                </ol>
+                <p><strong>Note:</strong> It is important to indicate the order number and tracking number on your return package to avoid any inconvenience/delay in the process of your return.</p>
+                <h3>Returns Policy</h3>
+                <p>If your product is damaged, defective, incorrect, or incomplete at the time of delivery, please file a Return Request on our website or email us at <a href="mailto:help@yourhaircare.com">help@yourhaircare.com</a> within 7 days from the date of delivery.</p>
+                <h3>Valid Reasons to Return an Item</h3>
+                <ol>
+                    <li>Delivered product is damaged (physically destroyed or broken) / defective (e.g., unable to use).</li>
+                    <li>Delivered product is incorrect (wrong product/size/color).</li>
+                    <li>Delivered product is incomplete (missing parts/accessories).</li>
+                    <li>Delivered product does not match the product description or picture.</li>
+                </ol>
+                <h3>Additional Considerations for International Shipments</h3>
+                <p>Due to the nature of international shipping, please be aware that:</p>
+                <ul>
+                    <li>Customs duties and taxes are non-refundable.</li>
+                    <li>Return shipping costs for international orders are the responsibility of the customer, unless the return is due to our error.</li>
+                    <li>Please allow additional time for international returns to be processed.</li>
+                </ul>
+                <h3>Refund Process</h3>
+                <p>Once your return is received and inspected, we will send you an email to notify you that we have received your returned item. We will also notify you of the approval or rejection of your refund. If you are approved, then your refund will be processed, and a credit will automatically be applied to your original method of payment, within a certain amount of days.</p>
+                <h3>Late or Missing Refunds</h3>
+                <p>If you haven’t received a refund yet, first check your bank account again. Then contact your credit card company, it may take some time before your refund is officially posted. If you’ve done all of this and you still have not received your refund yet, please contact us at <a href="mailto:help@yourhaircare.com">help@yourhaircare.com</a>.</p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="refund-policy.js"></script> -->
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const closeButton = document.querySelector('.close-button');
+        const refundModal = document.querySelector('.refund-modal');
+    
+        closeButton.addEventListener('click', function() {
+            refundModal.style.display = 'none'; // Hide the modal
+        });
+    
+        // Optional: Close modal when clicking outside the content
+        window.addEventListener('click', function(event) {
+            if (event.target === refundModal) {
+                refundModal.style.display = 'none';
+            }
+        });
+    });
+</script>
+</body>
+</html>

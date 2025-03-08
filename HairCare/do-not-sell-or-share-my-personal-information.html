@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Not Sell or Share My Personal Information - HairCare</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .optout-modal {
+            position: relative;
+            width: 80%;
+            max-width: 800px; 
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .optout-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .close-button {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .optout-body {
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .optout-body h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .optout-body ul {
+            padding-left: 20px;
+        }
+
+        .optout-body a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .optout-body a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="optout-modal">
+        <div class="optout-content">
+            <div class="optout-header">
+                <h2>Do Not Sell or Share My Personal Information / Opt-Out of Targeted Advertising</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="optout-body">
+                <h3>Your Privacy Rights</h3>
+                <p>HairCare respects your privacy and gives you the option to opt-out of the sale or sharing of your personal information, as well as targeted advertising. </p>
+
+                <h3>What does "Sell or Share" mean?</h3>
+                <p>Selling or sharing your personal information generally means that we make your information available to third parties for monetary or other valuable consideration. This could include sharing information with advertising partners or other businesses for their marketing purposes.</p>
+
+                <h3>How to Opt-Out</h3>
+                <p>You can exercise your right to opt-out by clicking the button below:</p>
+
+                <button id="optOutButton">Opt-Out Now</button> 
+
+                <p>When you click this button, we will stop selling or sharing your personal information and take steps to limit targeted advertising you receive. Please note that opting out may not completely eliminate all targeted advertising, as some advertising technologies rely on information that is not considered personal information.</p>
+
+                <h3>What information is covered?</h3>
+                <p>This opt-out applies to the following categories of personal information:</p>
+                <ul>
+                    <li>Identifiers (e.g., name, email address, IP address)</li>
+                    <li>Customer Records Information (e.g., billing and shipping address, purchase history)</li>
+                    <li>Commercial Information (e.g., products or services you have shown interest in)</li>
+                    <li>Internet Activity (e.g., browsing history on our website)</li>
+                    <li>Inferences drawn from any of the above information</li>
+                </ul>
+
+                <h3>Questions or Concerns?</h3>
+                <p>If you have any questions or concerns about your privacy rights or how to opt-out, please contact us at <a href="mailto:privacy@yourhaircare.com">privacy@yourhaircare.com</a>.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeButton = document.querySelector('.close-button');
+            const optoutModal = document.querySelector('.optout-modal');
+            const optOutButton = document.getElementById('optOutButton');
+        
+            closeButton.addEventListener('click', function() {
+                optoutModal.style.display = 'none';
+            });
+        
+            window.addEventListener('click', function(event) {
+                if (event.target === optoutModal) {
+                    optoutModal.style.display = 'none';
+                }
+            });
+
+            optOutButton.addEventListener('click', function() {
+                // Add your opt-out logic here
+                // This might involve setting a cookie, updating user preferences in your database, etc.
+                alert('You have opted out of the sale and sharing of your personal information and targeted advertising.');
+            });
+        });
+    </script>
+</body>
+</html>

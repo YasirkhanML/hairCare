@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* CHECKOUT PAGE */
+
+
+.checkout-page body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.checkout-page * {
+  box-sizing: border-box;
+}
+
+.checkout-page .container {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px; /* Adjust as needed */
+  padding: 20px;
+}
+
+.checkout-page .left-column {
+  padding: 20px;
+}
+
+.checkout-page .left-column h2,
+.checkout-page .left-column p,
+.checkout-page .left-column input,
+.checkout-page .left-column select,
+.checkout-page .left-column label {
+  margin: 0;
+  padding: 0;
+}
+
+.checkout-page .contact-section,
+.checkout-page .delivery-section,
+.checkout-page .shipping-section,
+.checkout-page .payment-section,
+.checkout-page .billing-section {
+  margin-bottom: 15px;
+}
+
+.checkout-page .left-column h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 24px;
+}
+
+.checkout-page .left-column input,
+.checkout-page .left-column select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.checkout-page .name-fields,
+.checkout-page .city-postal {
+  display: flex;
+  gap: 15px;
+}
+
+.checkout-page .name-fields input,
+.checkout-page .city-postal input {
+  width: 50%;
+}
+
+.checkout-page .phone-section {
+  position: relative;
+}
+
+.checkout-page .info-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #999;
+  cursor: pointer;
+}
+
+.checkout-page .login-link {
+  float: right;
+  text-decoration: none;
+  color: #e98282;
+  font-size: 16px;
+}
+
+.checkout-page .shipping-method,
+.checkout-page .payment-method {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.checkout-page .complete-order {
+  background-color: #e98282;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.checkout-page .footer-links {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.checkout-page .footer-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #e98282;
+  font-size: 16px;
+}
+
+/* Checkbox and Radio Button Styling */
+.checkout-page .checkbox-label,
+.checkout-page .radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.checkout-page .checkbox-label input[type="checkbox"],
+.checkout-page .radio-label input[type="radio"] {
+  margin-right: 10px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+}
+
+.checkout-page .checkbox-label input[type="checkbox"]:checked,
+.checkout-page .radio-label input[type="radio"]:checked {
+  background-color: #e98282;
+  border-color: #e98282;
+}
+
+.checkout-page .checkbox-label input[type="checkbox"]:checked::before {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+}
+
+.checkout-page .radio-label input[type="radio"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+}
+</style>
+<body class="checkout-page">
+    <div class="navbar2">
+        <div class="container">
+            <a href="images/logo.png" class="logo">
+                <img src="images/LOGO..PNG" alt="HairCare">
+            </a>
+        </div>
+    </div>
+
+    <div class="checkout-container">
+        <div class="container"> <div class="left-column">
+                <div class="contact-section">
+                    <h2>Contact</h2>
+                    <a href="loginregister.html" class="login-link">Log in</a>
+                    <input type="email" placeholder="Email">
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <span>Email me with news and offers</span>
+                    </label>
+                </div>
+
+                <div class="delivery-section">
+                    <h2>Delivery</h2>
+                    <select>
+                        <option>Pakistan</option>
+                    </select>
+                    <div class="name-fields">
+                        <input type="text" placeholder="First name (optional)">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="Apartment, suite, etc. (optional)">
+                    <div class="city-postal">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="Postal code (optional)">
+                    </div>
+                    <div class="phone-section">
+                        <input type="text" placeholder="Phone">
+                        <span class="info-icon">ⓘ</span>
+                    </div>
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <span>Save this information for next time</span>
+                    </label>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>Shipping method</h2>
+                    <div class="shipping-method">
+                        <span>Standard</span>
+                        <span>$ 24.92</span>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <h2>Payment</h2>
+                    <p>All transactions are secure and encrypted.</p>
+                    <div class="payment-method">
+                        <span>Cash on Delivery (COD)</span>
+                    </div>
+                </div>
+
+                <div class="billing-section">
+                    <h2>Billing address</h2>
+                    <label class="radio-label">
+                        <input type="radio" name="billing" checked>
+                        <span>Same as shipping address</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="billing">
+                        <span>Use a different billing address</span>
+                    </label>
+                </div>
+
+                <button class="complete-order">Complete order</button>
+
+                <div class="footer-links">
+                    <a href="refundpolicy.html">Refund policy</a>
+                    <a href="privacypolicy.html">Privacy policy</a>
+                    <a href="termofservices.html">Terms of service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Cart.renderCart('cart-items');
+        });
+    </script>
+</body>
+</html>

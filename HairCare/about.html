@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+   .page-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #db9292;
+            background-image: url('images/aboutus1.PNG');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 50px;
+
+        }
+
+        .text-content {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        .text-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5em;
+            color: white;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-content {
+            padding-left: 5%;
+            width: 40%;
+        }
+
+        .text-content h1 {
+            font-size: 3em;
+            color: #333;
+            font-weight: normal;
+        }
+
+
+        /* part */
+        .commitment-title{
+            font-family: 'Playfair Display', serif;
+        }
+        .commitment-text{
+            font-family: 'Playfair Display', serif;
+
+        }
+        /* part2 */
+        .hc-about-section {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #f9f9f9;
+        }
+
+        .hc-about-content-wrapper {
+            max-width: 1200px;
+            width: 90%;
+            text-align: center;
+            padding: 0;
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .hc-about-text {
+            margin-bottom: 30px;
+            color: #333;
+            line-height: 1.6;
+            padding: 0 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+        }
+
+        .hc-about-button-area {
+            margin-top: 30px;
+        }
+
+        .hc-about-customize-button {
+            background-color: black;
+            color: white !important;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hc-about-customize-button a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+            padding: 12px 24px;
+        }
+
+        .hc-about-customize-button:hover {
+            background-color: #333;
+        }
+
+        /* part 3 */
+        .page-wrapper {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .content-wrapper {
+            display: flex;
+            max-width: 1200px;
+            width: 90%;
+            background-color: white;
+            
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text-section {
+            flex: 1;
+            padding: 40px;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2em;
+
+        }
+
+        .text-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .text-section p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        
+        .container .image-section img {
+            max-height: 900px;
+            object-fit: contain;
+            width: 1900px;
+        }
+
+        .content-wrapper .image-section img {
+            max-height: 500px;
+            object-fit: contain;
+            width: 1900px;
+        }
+
+/* end */
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding: 50px;
+}
+
+.image-item {
+    text-align: center;
+    margin: 10px;
+    border: 1px solid rgb(247, 245, 245);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    /* box-sizing: border-box; */
+    /* Adjust width to accommodate all cards in one row */
+    width: calc(25% - 20px);
+    min-width: 150px;
+}
+
+.image-item img {
+    width: 400px;  
+    height: 400px; 
+    object-fit: cover; 
+}
+
+.image-item p {
+    margin: 0;
+    font-weight: bold;
+}
+.pic{
+    height: fit-content;
+    width: max-content;
+}
+.ok{
+    height: 600px;
+    overflow: hidden;
+  }
+.ok img {
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+<body>
+    <!-- navbar1 -->
+    <div class="top-bar">
+        <div class="container">
+          <div class="left-content">
+            <span>Will Take 3 to 5 Working days Delivery Time.</span>
+          </div>
+          <div class="right-content">
+            <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/login.php/">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en">
+                <i class="bi bi-instagram"></i>
+            </a>
+            
+            <a href="contact.html">CONTACT US</a>
+            
+          </div>
+        </div>
+      </div>
+    
+      <!-- navbar2 -->
+      <div class="navbar2">
+        <div class="container">
+            <a href="images/logo.png" class="logo">
+                <img src="images/LOGO..PNG" alt="HairCare">
+            </a>
+            <div class="right-content">
+                <a href="loginregister.html">LOGIN/REGISTER</a>
+                <span class="cart">
+                  <a href="#" onclick="toggleCart()">
+                    <i class="bi bi-bag"></i>
+                  </a>
+                </span>
+                <div class="search-container">
+                  <a href="javascript:void(0);" class="search-icon">
+                    <i class="bi bi-search"></i>
+                  </a>
+                </div>
+                <div>
+                  <a href="about.html"><i class="fas fa-info-circle"></i></a>
+              </div>
+          
+                <!-- The Search Dropdown -->
+                <div class="search-dropdown" id="searchDropdown">
+                  <div class="search-content">
+                    <input
+                      type="text"
+                      placeholder="Search by product or keyword"
+                      class="search-input"
+                    />
+                    <span class="close-search">X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    <script src="search.js"></script>
+
+  
+    
+      <!-- cart -->
+      <div class="cart-container" id="cart" style="display: none;">
+        <div class="cart-header">
+            <h2>Shopping cart</h2>
+            <a href="#" onclick="toggleCart()">X Close</a>
+        </div>
+        <div id="cart-items"></div>
+        <div class="subtotal">
+            <span>Subtotal:</span>
+            <span id="subtotal-value">$0.00</span>
+        </div>
+        <div class="buttons">
+            <a href="#" onclick="Cart.toggleCart()">X Close</a>
+            <button onclick="window.location.href='viewcart.html'">VIEW CART</button>
+            <button onclick="Cart.checkout()">CHECKOUT</button>
+        </div>
+    </div>
+    <script src="cart.js">  
+        Cart.renderCart('cart-items');
+    </script>
+      <!-- navbar3 -->
+      <div class="navbar3">
+        <div class="container">
+          <div class="dropdown">
+            <button class="dropbtn">SHAMPOO</button>
+            <div class="dropdown-content">
+              <a href="curl.html">Curl Defining</a>
+              <a href="damaged.html">Damaged</a>
+              <a href="dandruff.html">Dandruff</a>
+              <a href="hairloss.html">Hairloss</a>
+              <a href="normal.html">Normal</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">CONDITIONER</button>
+            <div class="dropdown-content">
+              <a href="smoothing.html">Smoothing</a>
+              <a href="Straightening.html">Straightening</a>
+              <a href="volumizing.html">Volumizing Conditioner</a>
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR TREATMENTS</button>
+            <div class="dropdown-content">
+              <a href="colorconditioner.html">Hair Color Conditioner</a>
+              <a href="damagerepair.html">Damage Repairing</a>
+              <a href="moisturizing.html">Moisturizing</a>
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR COLOR</button>
+            <div class="dropdown-content">
+              <a href="colorneutron.html">Hair Color Neutralizer</a>
+              <a href="temporarycolor.html">Temporary Hair Color</a>
+              <a href="permanentcolor.html">Permanent Hair Color</a>
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR LOSS</button>
+            <div class="dropdown-content">
+              <a href="hairregrow.html">Hair Regrowth Treatment</a>
+              <a href="vitamins.html">Vitamins</a>
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">STYLING PRODUCTS</button>
+            <div class="dropdown-content">
+              <a href="gel.html">Hair Gel</a>
+              <a href="glue.html">Hair Glue</a>
+              <a href="spray.html">Hair Spray</a>
+              <a href="m&f.html">Mousse & Foams</a>
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">STYLING TOOLS</button>
+            <div class="dropdown-content">
+              <a href="dryer.html">Hair Dryers</a>
+              <a href="rollers.html">Hair Rollers</a>
+              <a href="iron.html">Straightening Iron</a>
+              <a href="b&comb.html">Brushes & Combs</a>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <!-- page material -->
+      <div class="page-container">
+        <div class="text-content">
+            <h1>Unlocks the beauty of your hair dream!</h1>
+        </div>
+    </div>
+
+    <!-- paet2 -->
+    <div class="hc-about-section">
+        <div class="hc-about-content-wrapper">
+            <div class="hc-about-text">
+                <p>Ever realized that your hair is uniquely yours? Each strand speaks to your individuality. We at HairCare saw a gap in the haircare industry's acknowledgment of this uniqueness and stepped in. HairCare celebrates you with tailor-made, naturally-derived formulas, crafted by in-house experts. Since 2020, we've helped countless individuals discover their best hair days, and counting...</p>
+            </div>
+            <div class="hc-about-button-area">
+                <button class="hc-about-customize-button">
+                    <a href="loginregister.html">Customize My Formula</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- part 3 -->
+    <div class="container">
+        <div class="text-section">
+            <h2 class="commitment-title">Our Commitment</h2>
+            <h3 class="commitment-subtitle">Excellence in Formulation</h3>
+            <p class="commitment-text">
+                At HairCare, we are dedicated to crafting exceptional haircare products that celebrate your unique beauty. We formulate and produce our products with the utmost care, ensuring quality control at every stage. Our commitment ensures formulas are rigorously safety-tested, dermatologist-tested, and validated by our customers. We prioritize ethical, sustainably-sourced, and naturally-derived ingredients. Our formulas are vegan, gluten-free, paraben-free, sulfate-free, and cruelty-free. Rooted in expertise, all formulas are made-to-order in our state-of-the-art facility.
+            </p>
+            <p class="signature">HC Team</p>
+        </div>
+        <div class="image-section">
+            <img src="images/aboutus2.PNG" alt="Hair Serum">
+        </div>
+    </div>
+
+    <!-- part 4-->
+    <div class="content-wrapper">
+        <div class="image-section">
+            <img src="images/aboutus3.PNG" alt="Shampoo and Conditioner Bottles">
+        </div>
+        <div class="text-section">
+            <h2>Innovation Meets Responsibility</h2>
+            <p>Every step we take is intentional, aiming to minimize our environmental impact. We use post-consumer recycled materials for our product bottles and shipping boxes. Our packaging supplier holds SFI Certification, ensuring sustainable forestry practices in material sourcing. We offer customers the option to forgo pumps and minimize secondary packaging whenever possible. In our production facility, we've implemented energy-saving processes and the size of our shipping boxes is designed to minimize waste.</p>
+        </div>
+    </div>
+
+    <!-- end -->
+    <div class="image-container">
+        <div class="image-item pic">
+            <img src="images/aboutend1.PNG" class="ok" alt="Ingredients">
+            
+        </div>
+        <div class="image-item pic">
+            <img src="images/aboutend2.PNG" class="ok" alt="Inclusivity">
+            
+        </div>
+        <div class="image-item pic">
+            <img src="images/aboutend3.PNG" class="ok" alt="Innovation">
+            
+        </div>
+        <div class="image-item pic">
+            <img src="images/aboutend4.PNG" class="ok" alt="Sustainability">
+           
+        </div>
+    </div>
+<script src="search.js"></script>
+<div class="cart-container" id="cart" style="display: none;">
+    </div>
+<script src="cart.js">
+    Cart.renderCart('cart-items');
+</script>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-left">
+          <p>#HairCare</p>
+          <p>Money Back Guarantee</p>
+          <p>Voluntary Recall</p>
+        </div>
+        <div class="footer-center">
+          <p>Share your good hair day</p>
+          <p>#HairCare</p>
+        </div>
+        <div class="footer-right">
+          <p>connect with us</p>
+          <div class="social-icons">
+            <a href="http://twitter.com" class="social-icon"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/login.php/" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" class="social-icon"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+                <a href="contact.html">Contact Us</a> | 
+                <a href="privacypolicy.html">Privacy</a> | 
+                <a href="consumer-health-data-privacy-policy.html">Consumer Health Data Privacy Policy</a> | 
+                <a href="terms-and-conditions.html">Terms & Conditions</a> | 
+                <a href="your-privacy-choices.html">Your Privacy Choices</a> 
+                <i class="bi bi-shield-lock"></i>
+            </p>
+            <p><a href="do-not-sell-or-share-my-personal-information.html">Do Not Sell or Share My Personal Information / Opt-Out of Targeted Advertising</a> | NOTICE: We May Sell Your Sensitive Personal Data.</p>
+            <p>© 2025 HairCare | HairCare Beauty</p>
+            <p>Part of the HairCare Family: [HairCare Onlineshop]</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+

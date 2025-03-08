@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer Health Data Privacy Policy - HairCare</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .privacy-modal {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .privacy-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .close-button {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .privacy-body {
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .privacy-body h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .privacy-body ul {
+            padding-left: 20px;
+        }
+
+        .privacy-body a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .privacy-body a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-modal">
+        <div class="privacy-content">
+            <div class="privacy-header">
+                <h2>Consumer Health Data Privacy Policy</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="privacy-body">
+                <h3>Introduction</h3>
+                <p>Welcome to HairCare! We understand that your consumer health data is sensitive, and we are committed to protecting your privacy. This Consumer Health Data Privacy Policy outlines how we collect, use, and safeguard your health information when you use our website or services, particularly in relation to your hair and scalp health.</p>
+
+                <h3>Information We Collect</h3>
+                <ul>
+                    <li><strong>Health-Related Information:</strong> When you create a personalized formula or consult with our experts, we may collect information about your hair type (e.g., oily, dry, curly), scalp condition (e.g., dandruff, dryness, sensitivity), hair loss concerns, and any allergies or sensitivities you have to hair care ingredients. </li>
+                    <li><strong>Usage Data:</strong> We collect information about how you interact with our website, including pages related to specific hair and scalp conditions, products you view, and advice you seek. </li>
+                </ul>
+
+                <h3>How We Use Your Health Information</h3>
+                <ul>
+                    <li>To formulate personalized hair care products tailored to your specific needs.</li>
+                    <li>To provide you with relevant product recommendations and advice.</li>
+                    <li>To improve our products and services and develop new offerings that address your health concerns.</li>
+                    <li>To communicate with you about your personalized formulas, relevant promotions, and updates related to your hair health.</li> 
+                </ul>
+                
+                <h3>Data Security</h3>
+                <p>We maintain strict security measures to protect your consumer health data from unauthorized access, use, or disclosure. This includes encryption of sensitive data, access controls, and regular security assessments.</p>
+
+                <h3>Third-Party Services</h3>
+                <p>We may share your information with third-party service providers who assist us with payment processing, shipping, marketing, and analytics. These service providers are contractually obligated to protect your information and only use it for the purposes we specify. We will only share your consumer health data with third parties who are also compliant with relevant health data privacy regulations and who agree to uphold the same standards of data protection that we do.</p>
+
+                <h3>Your Rights</h3>
+                <p>You have the right to access, correct, or delete your personal information, including your consumer health data. You can also opt-out of receiving marketing communications at any time. To exercise these rights, please contact us at <a href="mailto:privacy@yourhaircare.com">privacy@yourhaircare.com</a>.</p>
+
+                <h3>Changes to This Policy</h3>
+                <p>We may update this Consumer Health Data Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page. Your continued use of our website after any changes indicates your acceptance of the updated policy.</p>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions or concerns about this Consumer Health Data Privacy Policy, please contact us at <a href="mailto:privacy@yourhaircare.com">privacy@yourhaircare.com</a>.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeButton = document.querySelector('.close-button');
+            const privacyModal = document.querySelector('.privacy-modal');
+        
+            closeButton.addEventListener('click', function() {
+                privacyModal.style.display = 'none';
+            });
+        
+            window.addEventListener('click', function(event) {
+                if (event.target === privacyModal) {
+                    privacyModal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
